@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShareStorage — Free Local Backup for Your Photos & Videos</title>
+  <meta name="description" content="Turn an old phone into a free local backup server. Encrypted, WiFi-only, no cloud, no fees. Two-mode app: Vault and Client.">
+  <meta property="og:title" content="ShareStorage — Free Local Backup">
+  <meta property="og:description" content="Turn an old phone into a free local backup server. WiFi-only, encrypted, completely free.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────────────────────────── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/logo.png" alt="ShareStorage logo">
+      ShareStorage
+    </a>
+    <ul class="nav-links">
+      <li><a href="how-to-use.html">How to Use</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+    <a href="#download" class="btn-download">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      Download Free
+    </a>
+    <button class="nav-menu-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ────────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Left: copy -->
+      <div class="hero-copy">
+        <div class="hero-badge">Free · No Cloud · WiFi Only</div>
+        <h1 class="hero-title">
+          Your old phone is a<br>
+          <span class="gradient-text">free backup server.</span>
+        </h1>
+        <p class="hero-desc">
+          ShareStorage turns any spare Android phone into a local backup vault
+          for your photos and videos — encrypted, WiFi-only, and completely free.
+          Sync on demand. Your data never leaves your home.
+        </p>
+        <div class="hero-actions">
+          <a href="#download" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/>
+            </svg>
+            Get on Google Play
+          </a>
+          <a href="how-to-use.html" class="btn-secondary">
+            See how it works
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-val mono green">0</div>
+            <div class="hero-stat-label">bytes to cloud</div>
+          </div>
+          <div>
+            <div class="hero-stat-val mono">Free</div>
+            <div class="hero-stat-label">always &amp; forever</div>
+          </div>
+          <div>
+            <div class="hero-stat-val mono">AES-256</div>
+            <div class="hero-stat-label">at rest encryption</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: phone mockup -->
+      <div class="hero-visual">
+        <!-- Client phone (foreground) -->
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="phone-ui">
+              <div class="phone-ui-bar w80 accent" style="margin-bottom:12px;height:8px;border-radius:4px;"></div>
+              <div class="phone-ui-bar w60"></div>
+              <div class="phone-ui-bar w40"></div>
+              <div class="phone-ui-grid" style="margin-top:16px;">
+                <div class="phone-ui-card"></div>
+                <div class="phone-ui-card"></div>
+                <div class="phone-ui-card"></div>
+                <div class="phone-ui-card"></div>
+              </div>
+              <div class="phone-ui-list">
+                <div class="phone-ui-row">
+                  <div class="phone-ui-dot"></div>
+                  <div class="phone-ui-lines">
+                    <div class="phone-ui-line"></div>
+                    <div class="phone-ui-line short"></div>
+                  </div>
+                </div>
+                <div class="phone-ui-row">
+                  <div class="phone-ui-dot green-dot"></div>
+                  <div class="phone-ui-lines">
+                    <div class="phone-ui-line"></div>
+                    <div class="phone-ui-line short"></div>
+                  </div>
+                </div>
+                <div class="phone-ui-row" style="border:none;">
+                  <div class="phone-ui-dot"></div>
+                  <div class="phone-ui-lines">
+                    <div class="phone-ui-line"></div>
+                    <div class="phone-ui-line short"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-ui-upload">
+                <div class="upload-icon"></div>
+                <div class="phone-ui-upload-bar-wrap">
+                  <div class="phone-ui-upload-bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vault phone (background) -->
+        <div class="phone-frame-secondary">
+          <div class="phone-secondary-screen">
+            <div class="vault-label">
+              <div class="vault-dot"></div>
+              <div class="vault-label-text"></div>
+            </div>
+            <div class="vault-ui-bars">
+              <div class="vault-ui-bar"></div>
+              <div class="vault-ui-bar w70"></div>
+              <div class="vault-ui-bar w50"></div>
+            </div>
+            <div class="vault-storage">
+              <div class="vault-storage-label"></div>
+              <div class="vault-storage-bar-wrap">
+                <div class="vault-storage-bar"></div>
+              </div>
+            </div>
+            <div class="vault-ui-bars" style="margin-top:12px;">
+              <div class="vault-ui-bar"></div>
+              <div class="vault-ui-bar w70"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WiFi connection line -->
+        <div class="phone-connection">
+          <div class="wifi-line"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURES ─────────────────────────────────────────────────────────── -->
+<section class="features">
+  <div class="container">
+    <div class="features-header reveal">
+      <div class="section-label">Why ShareStorage</div>
+      <h2>Everything you need,<br>nothing you don't.</h2>
+      <p>Built around one principle: your photos stay on hardware you own, in your home, under your control.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <span class="feature-icon">🔒</span>
+        <h3>Encrypted at rest</h3>
+        <p>Files are encrypted on the vault with your password-derived key. A stolen vault phone reveals nothing without your password.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;">
+            <path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/>
+          </svg>
+        </span>
+        <h3>WiFi only — zero internet</h3>
+        <p>Syncs only when both phones are on the same WiFi. Nothing ever touches the internet — not even for setup.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;">
+            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </span>
+        <h3>Completely free</h3>
+        <p>No subscription, no storage limit fees. Use as much space as your old phone has — it's all yours.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">👨‍👩‍👧</span>
+        <h3>Share with family</h3>
+        <p>Add family members, create shared storages, set per-person limits — full multi-user support built in.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">♻️</span>
+        <h3>Repurpose old hardware</h3>
+        <p>That old phone in your drawer becomes a powerful local backup server with one app install.</p>
+      </div>
+      <div class="feature-card reveal">
+        <span class="feature-icon">🎛️</span>
+        <h3>Full control</h3>
+        <p>Set storage caps, manage members, activate or deactivate storages — you're the admin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ──────────────────────────────────────────────────────── -->
+<section class="how">
+  <div class="container">
+    <div class="how-header reveal">
+      <div class="section-label">Getting started</div>
+      <h2>Up and running<br>in three steps.</h2>
+      <p>No cloud accounts, no router setup. Just two phones on the same WiFi.</p>
+    </div>
+    <div class="how-steps">
+      <div class="how-step reveal">
+        <div class="step-number">01</div>
+        <h3>Set up the vault phone</h3>
+        <p>Install ShareStorage on the old phone, choose Vault mode, pick a storage location, and set a space limit.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="step-number">02</div>
+        <h3>Add people &amp; share the QR</h3>
+        <p>Tap "Add Person" for each family member, then show them the connection QR from the vault home screen.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="step-number">03</div>
+        <h3>Connect &amp; sync</h3>
+        <p>Install on the everyday phone, scan the QR, set your password, and tap "Sync now" to back up your photos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BANNER ────────────────────────────────────────────────────────── -->
+<section class="cta-banner" id="download">
+  <div class="container">
+    <div class="cta-box reveal">
+      <div class="section-label" style="justify-content:center;">Free on Google Play</div>
+      <h2>Start backing up today.<br><span class="gradient-text">It costs nothing.</span></h2>
+      <p style="margin-bottom:32px;">Install ShareStorage on your old phone in minutes and take back ownership of your memories.</p>
+      <a href="#" class="btn-primary" style="margin:0 auto;width:fit-content;display:inline-flex;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/>
+        </svg>
+        Download Free on Android
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="ShareStorage logo">
+        ShareStorage · Nexavel Studio
+      </div>
+      <nav class="footer-links">
+        <a href="how-to-use.html">How to Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <div class="footer-copy">© 2025 Nexavel Studio</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

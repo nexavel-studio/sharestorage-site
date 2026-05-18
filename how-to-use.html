@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Use — ShareStorage</title>
+  <meta name="description" content="Step-by-step guide to setting up ShareStorage in Vault mode and Client mode.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────────────────────────── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/logo.png" alt="ShareStorage logo">
+      ShareStorage
+    </a>
+    <ul class="nav-links">
+      <li><a href="how-to-use.html">How to Use</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+    <a href="index.html#download" class="btn-download">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      Download Free
+    </a>
+    <button class="nav-menu-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── PAGE HEADER ───────────────────────────────────────────────────────── -->
+<header class="page-header">
+  <div class="container">
+    <div class="section-label">Guide</div>
+    <h1>How to Use<br><span class="gradient-text">ShareStorage</span></h1>
+    <p>Two phones, two roles. Set up takes about five minutes — no cloud accounts, no router configuration needed.</p>
+  </div>
+</header>
+
+<!-- ── TABS ─────────────────────────────────────────────────────────────── -->
+<section class="tabs-section">
+  <div class="container">
+
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="vault">
+        🔒 Vault — the backup server
+      </button>
+      <button class="tab-btn" data-tab="client">
+        📱 Client — your everyday phone
+      </button>
+    </div>
+
+    <!-- VAULT TAB -->
+    <div id="tab-vault" class="tab-panel active">
+      <div class="steps-list">
+
+        <div class="step-item vault-step reveal">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>Install ShareStorage on your old phone</h3>
+            <p>This phone will stay plugged in at home and act as the backup server. It doesn't need a SIM card — WiFi is enough.</p>
+          </div>
+        </div>
+
+        <div class="step-item vault-step reveal">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>Open the app and choose Vault mode</h3>
+            <p>On first launch you'll see two modes: Vault and Client. Tap <strong>Vault</strong>. This mode turns the phone into a local server that other phones can back up to.</p>
+          </div>
+        </div>
+
+        <div class="step-item vault-step reveal">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>Pick a storage location and set a space limit</h3>
+            <p>Choose where vault files should be stored — internal storage or an SD card if one is inserted. Then set how much space the vault can use (or leave it unlimited). That's all the setup the vault itself needs.</p>
+            <div class="note-box green">
+              <span class="note-icon">💡</span>
+              <p>You can change the storage limit at any time from the vault settings screen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-item vault-step reveal">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h3>Add people to the vault</h3>
+            <p>Tap <strong>+ Add Person</strong> on the vault home screen for each person you want to give access. Give them a short sign-in name (e.g. "alice"). The app will show you a hand-off card with their sign-in name and the temporary password <strong>0000</strong> — share these with them so they can log in from their phone.</p>
+            <div class="note-box">
+              <span class="note-icon">ℹ️</span>
+              <p>When you add a person, a private storage is automatically created for them. You can also add shared storages from the vault home later.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-item vault-step reveal">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h3>Show the connection QR code</h3>
+            <p>On the vault home screen, under the <strong>Vault Server</strong> card, tap <strong>"Show QR to Connect"</strong>. This displays the pairing QR that the client phone needs to scan. The QR is only valid while the vault server is running.</p>
+            <div class="note-box green">
+              <span class="note-icon">💡</span>
+              <p>You can have multiple storages with different members and limits — one private per person, shared ones for the family, etc.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-item vault-step reveal">
+          <div class="step-num">6</div>
+          <div class="step-body">
+            <h3>Keep the vault phone on and charging</h3>
+            <p>The vault server runs as a background service. For best results, keep the phone plugged in and connected to your home WiFi. Family members can sync whenever they're on the same network.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CLIENT TAB -->
+    <div id="tab-client" class="tab-panel">
+      <div class="steps-list">
+
+        <div class="step-item reveal">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>Get your sign-in name from the vault operator</h3>
+            <p>Before you connect, the person running the vault (the vault operator — usually you or a family member) must add you via <strong>"Add Person"</strong> on the vault home screen. They'll share a sign-in name and the temporary password <strong>0000</strong> with you.</p>
+          </div>
+        </div>
+
+        <div class="step-item reveal">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>Install ShareStorage and choose Client mode</h3>
+            <p>Install from Google Play. On first launch, tap <strong>Client</strong>. Client mode is for phones that back up to a vault — it does not run a server itself.</p>
+          </div>
+        </div>
+
+        <div class="step-item reveal">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>Scan the vault's QR code</h3>
+            <p>On the vault phone, open the vault home screen and tap <strong>"Show QR to Connect"</strong> in the Vault Server card. On your phone, the app will open the camera — scan that QR. Both phones must be on the same WiFi network.</p>
+            <div class="note-box">
+              <span class="note-icon">📶</span>
+              <p>Connection requires both phones on the same local WiFi. Neither phone needs internet access.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-item reveal">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h3>Log in and set your password</h3>
+            <p>Enter the sign-in name and temporary password <strong>0000</strong> that the vault operator gave you. You'll be prompted immediately to choose your own permanent password. Save the <strong>recovery code</strong> shown next — write it down somewhere safe. You'll need it if you ever forget your password.</p>
+            <div class="note-box">
+              <span class="note-icon">⚠️</span>
+              <p><strong>Save your recovery code.</strong> It's shown once and never stored by the app. Losing it alongside your password means you can't recover your account.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-item reveal">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h3>Grant photo library access</h3>
+            <p>ShareStorage will ask for permission to access your photos and videos. Grant access so it can read your gallery when you sync.</p>
+          </div>
+        </div>
+
+        <div class="step-item reveal">
+          <div class="step-num">6</div>
+          <div class="step-body">
+            <h3>Sync whenever you want</h3>
+            <p>Open the storage in the gallery and tap <strong>Sync now</strong> to back up new photos and videos to the vault. You can also tap the upload button to pick specific files. Both phones need to be on the same WiFi for sync to work.</p>
+            <div class="note-box green">
+              <span class="note-icon">✅</span>
+              <p>Already-uploaded files are never re-uploaded. Sync detects duplicates locally and remotely, so each file is only sent once.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="ShareStorage logo">
+        ShareStorage · Nexavel Studio
+      </div>
+      <nav class="footer-links">
+        <a href="how-to-use.html">How to Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <div class="footer-copy">© 2025 Nexavel Studio</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

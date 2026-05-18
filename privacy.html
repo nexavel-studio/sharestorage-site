@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — ShareStorage</title>
+  <meta name="description" content="ShareStorage privacy policy. No cloud storage, no personal data collection, WiFi-only operation.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────────────────────────── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/logo.png" alt="ShareStorage logo">
+      ShareStorage
+    </a>
+    <ul class="nav-links">
+      <li><a href="how-to-use.html">How to Use</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+    <a href="index.html#download" class="btn-download">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      Download Free
+    </a>
+    <button class="nav-menu-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── PAGE HEADER ───────────────────────────────────────────────────────── -->
+<header class="page-header">
+  <div class="container">
+    <div class="section-label">Legal</div>
+    <h1>Privacy <span class="gradient-text">Policy</span></h1>
+    <p>Short version: we collect almost nothing, your files never leave your home network, and we have no access to your data.</p>
+  </div>
+</header>
+
+<!-- ── CONTENT ───────────────────────────────────────────────────────────── -->
+<section class="content-section">
+  <div class="container">
+    <div class="content-grid">
+
+      <!-- TOC -->
+      <aside class="content-toc">
+        <h4>Contents</h4>
+        <nav class="toc-links">
+          <a href="#overview">Overview</a>
+          <a href="#what-we-collect">What we collect</a>
+          <a href="#your-files">Your files</a>
+          <a href="#encryption">Encryption</a>
+          <a href="#ads">Ads</a>
+          <a href="#third-parties">Third parties</a>
+          <a href="#children">Children</a>
+          <a href="#changes">Changes</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </aside>
+
+      <!-- Body -->
+      <div class="content-body">
+
+        <div class="content-block" id="overview">
+          <h2>Overview</h2>
+          <p>ShareStorage is a local backup app developed by Nexavel Studio. It operates entirely on your local WiFi network — no data is transmitted to our servers or any third-party servers (except for optional ads, described below).</p>
+          <p>This policy applies to the ShareStorage Android application. Last updated: May 2025.</p>
+        </div>
+
+        <div class="content-block" id="what-we-collect">
+          <h2>What we collect</h2>
+          <p>We do not collect, store, or transmit any personally identifiable information. Specifically:</p>
+          <ul>
+            <li>We do not collect your name, email address, or any contact information.</li>
+            <li>We do not collect device identifiers beyond what the AdMob SDK requires (see Ads section).</li>
+            <li>We collect anonymous usage analytics via Firebase Analytics (see Third parties below).</li>
+            <li>We collect crash reports automatically via Firebase Crashlytics (see Third parties below). Reports include the exception, a stack trace, and context keys such as which screen was active — no file content or passwords.</li>
+          </ul>
+          <p>Account information (your sign-in name, a hashed form of your password, and your recovery-code hash) is stored only on the vault device in your home — it is never transmitted to our servers.</p>
+        </div>
+
+        <div class="content-block" id="your-files">
+          <h2>Your files</h2>
+          <p>Photos and videos backed up through ShareStorage:</p>
+          <ul>
+            <li>Are transferred directly between your devices over your local WiFi network only.</li>
+            <li>Never pass through our servers or the internet.</li>
+            <li>Are stored on the vault device you designate — hardware you own in your home.</li>
+            <li>Are encrypted at rest on the vault device before being written to disk.</li>
+          </ul>
+          <p>We have no technical ability to access your files. Even if we wanted to, we have no server that your files ever reach.</p>
+        </div>
+
+        <div class="content-block" id="encryption">
+          <h2>Encryption</h2>
+          <p>Files stored on the vault are encrypted at rest using AES-256 before being written to disk. The cipher is selected per file type: photos and documents use AES-256-GCM (authenticated); videos and audio use AES-256-CTR (which allows efficient random-access streaming by media players). Both use a per-storage key that is derived from your password and never stored in plaintext.</p>
+          <ul>
+            <li>If you lose your password <em>and</em> your recovery code, your files cannot be decrypted — by you or by us. Password reset alone (via the recovery flow) does not automatically restore access to existing encrypted files; a vault admin must re-invite you to each storage.</li>
+            <li>Communication between the client and vault devices uses TLS with certificate pinning. The vault's certificate fingerprint is baked into the pairing QR, so a rogue device on the same network cannot impersonate the vault.</li>
+            <li>No encryption keys or passwords are transmitted to our servers. The vault IS your server — it's your own phone on your own network.</li>
+          </ul>
+        </div>
+
+        <div class="content-block" id="ads">
+          <h2>Ads</h2>
+          <p>ShareStorage displays ads served by Google AdMob to support free access to the app. AdMob may collect:</p>
+          <ul>
+            <li>Advertising identifiers (Android Advertising ID) to serve relevant ads.</li>
+            <li>Coarse location (if granted) for regional ad targeting.</li>
+            <li>Device information required for ad delivery.</li>
+          </ul>
+          <p>AdMob data collection is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--purple);">Google's Privacy Policy</a>. You can opt out of personalized ads in your Android settings under <strong>Google → Ads → Delete advertising ID</strong>.</p>
+          <p>Ads are disabled by default via remote configuration and will only be enabled when the app is live on the Play Store.</p>
+        </div>
+
+        <div class="content-block" id="third-parties">
+          <h2>Third parties</h2>
+          <p>ShareStorage integrates the following third-party SDKs:</p>
+          <ul>
+            <li><strong>Google AdMob</strong> — serves ads. May collect advertising identifiers, coarse location, and device information. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--purple);">Google's Privacy Policy</a>.</li>
+            <li><strong>Firebase Analytics</strong> — collects anonymous in-app events (e.g. screen views, feature usage counts) to help us understand how the app is used. No personally identifiable information is collected. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--purple);">Google's Privacy Policy</a>.</li>
+            <li><strong>Firebase Crashlytics</strong> — automatically records crash reports when the app encounters an unhandled exception. Reports include the exception type, stack trace, device model, OS version, and app version. Context keys (such as the active screen name) may be attached. No file content, passwords, or encryption keys are ever included in crash reports. Governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--purple);">Google's Privacy Policy</a>.</li>
+          </ul>
+          <p>No other third-party SDKs, analytics libraries, or data collection services are integrated in the app.</p>
+        </div>
+
+        <div class="content-block" id="children">
+          <h2>Children</h2>
+          <p>ShareStorage is not directed at children under 13. We do not knowingly collect information from children. If you believe a child has provided information through the app, please contact us and we will address it promptly.</p>
+        </div>
+
+        <div class="content-block" id="changes">
+          <h2>Changes to this policy</h2>
+          <p>If we make material changes to this privacy policy, we will update this page and revise the "Last updated" date. We encourage you to review this page periodically.</p>
+          <p>Because we collect minimal data, changes are unlikely to affect your privacy in a meaningful way. If any future version of the app begins collecting data beyond what is described here, we will announce it clearly in the app update release notes.</p>
+        </div>
+
+        <div class="content-block" id="contact">
+          <h2>Contact</h2>
+          <p>Questions about this privacy policy or how ShareStorage handles your data?</p>
+          <div class="contact-box">
+            <p>Reach out to Nexavel Studio directly:</p>
+            <a href="mailto:nexavel.studio@gmail.com" class="contact-email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+              nexavel.studio@gmail.com
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="ShareStorage logo">
+        ShareStorage · Nexavel Studio
+      </div>
+      <nav class="footer-links">
+        <a href="how-to-use.html">How to Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <div class="footer-copy">© 2025 Nexavel Studio</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

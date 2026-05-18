@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support & FAQ — ShareStorage</title>
+  <meta name="description" content="Answers to common questions about ShareStorage — setup, WiFi requirements, encryption, family sharing, and more.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ── NAV ─────────────────────────────────────────────────────────────── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/logo.png" alt="ShareStorage logo">
+      ShareStorage
+    </a>
+    <ul class="nav-links">
+      <li><a href="how-to-use.html">How to Use</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+    <a href="index.html#download" class="btn-download">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      Download Free
+    </a>
+    <button class="nav-menu-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── PAGE HEADER ───────────────────────────────────────────────────────── -->
+<header class="page-header">
+  <div class="container">
+    <div class="section-label">Help</div>
+    <h1>Support <span class="gradient-text">&amp; FAQ</span></h1>
+    <p>Common questions about setup, storage, encryption, and family sharing. Can't find what you need? Email us directly.</p>
+  </div>
+</header>
+
+<!-- ── CONTENT ───────────────────────────────────────────────────────────── -->
+<section class="content-section">
+  <div class="container">
+    <div class="content-grid">
+
+      <!-- TOC -->
+      <aside class="content-toc">
+        <h4>Jump to</h4>
+        <nav class="toc-links">
+          <a href="#setup">Setup</a>
+          <a href="#connection">Connection</a>
+          <a href="#storage">Storage &amp; Files</a>
+          <a href="#security">Security</a>
+          <a href="#family">Family Sharing</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+      </aside>
+
+      <!-- Body -->
+      <div class="content-body">
+
+        <div class="content-block" id="setup">
+          <h2>Setup</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-q">
+                What phones can act as a vault?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>Any Android phone running Android 8.0 (Oreo) or later can be the vault. It doesn't need to be fast — even old budget phones work well. The more internal storage the phone has, the more you can back up. The phone should stay connected to power and WiFi.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                Do I need to keep the vault phone on all the time?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>Yes — the vault runs a server that client phones connect to when they want to sync. If the vault phone is off or offline, sync attempts from a client will fail. We recommend keeping it plugged in and connected to WiFi at all times. If the vault was offline and comes back up, any family member can simply tap Sync now to resume — nothing is lost between offline periods.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                Can I use the same phone as both vault and client?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>No — each installation runs in one mode: Vault or Client. You need at least two phones: one to be the vault and one (or more) to be clients. Most people use an old phone as the vault and their current phone as the client.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                I forgot my password. Can I recover my account?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>Yes — there are two recovery paths. On the login screen, tap <strong>"Forgot password?"</strong>:</p>
+                <ul style="margin-top:10px;display:flex;flex-direction:column;gap:6px;">
+                  <li style="display:flex;align-items:flex-start;gap:8px;font-size:0.9rem;color:var(--text-muted);"><span style="color:var(--purple);font-family:var(--mono);font-size:0.8rem;">—</span><strong>Recovery code:</strong> Enter the 24-character code that was shown when you first set up your account. Always available.</li>
+                  <li style="display:flex;align-items:flex-start;gap:8px;font-size:0.9rem;color:var(--text-muted);"><span style="color:var(--purple);font-family:var(--mono);font-size:0.8rem;">—</span><strong>Device challenge:</strong> If you're on the same device where you first logged in, the app can verify your identity via a stored key — no code needed.</li>
+                </ul>
+                <p style="margin-top:10px;">After recovery your password is reset. However, your existing backed-up files won't be accessible until a vault admin re-invites you to each storage — this is a deliberate trade-off to protect your data. If you lose both your password <em>and</em> your recovery code, account recovery is not possible.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content-block" id="connection">
+          <h2>Connection</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-q">
+                Why do both phones need to be on the same WiFi?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>ShareStorage communicates directly between devices over your local network — there is no relay server. Both phones need to be on the same local network so they can discover each other. This is what makes it private: your files travel only over your own WiFi, never over the internet.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                Can I back up when I'm away from home?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>Not currently. Backup only happens when both phones are on the same local WiFi network. When you get home and reconnect to your home WiFi, open the gallery and tap <strong>Sync now</strong> to back up everything taken while you were away.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                The client can't find the vault. What should I check?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>Check these in order:</p>
+                <ul style="margin-top:10px;display:flex;flex-direction:column;gap:6px;">
+                  <li style="display:flex;align-items:flex-start;gap:8px;font-size:0.9rem;color:var(--text-muted);"><span style="color:var(--purple);font-family:var(--mono);font-size:0.8rem;">—</span>Both phones are on the <strong>same WiFi network</strong> (not one on 2.4GHz and one on 5GHz if they're isolated).</li>
+                  <li style="display:flex;align-items:flex-start;gap:8px;font-size:0.9rem;color:var(--text-muted);"><span style="color:var(--purple);font-family:var(--mono);font-size:0.8rem;">—</span>The vault server is running — check for a green <strong>"ONLINE"</strong> indicator in the vault app's Server Status card. The server runs as a background service and doesn't need the vault app to be in the foreground.</li>
+                  <li style="display:flex;align-items:flex-start;gap:8px;font-size:0.9rem;color:var(--text-muted);"><span style="color:var(--purple);font-family:var(--mono);font-size:0.8rem;">—</span>Your router does not have AP isolation enabled (this blocks device-to-device communication).</li>
+                  <li style="display:flex;align-items:flex-start;gap:8px;font-size:0.9rem;color:var(--text-muted);"><span style="color:var(--purple);font-family:var(--mono);font-size:0.8rem;">—</span>ShareStorage has local network permission on both phones (Android Settings → Apps → ShareStorage → Permissions).</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content-block" id="storage">
+          <h2>Storage &amp; Files</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-q">
+                How much can I store?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>As much as the vault phone's free storage space allows. ShareStorage has no artificial limits — if your vault phone has 128 GB free, you can use all of it. You can set voluntary per-storage capacity caps in the vault settings to reserve space for other uses.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                What file types are supported?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>Photos and videos from your Android photo library — JPEG, PNG, HEIC, MP4, MOV, and other formats supported by Android's media store. Raw camera files (DNG) are also backed up if your camera app writes them to the photo library.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                What happens if the vault runs out of storage?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>Sync pauses and you'll see a warning in both the vault and client apps. No files are deleted automatically. To resolve it, free up space on the vault phone (delete other apps, clear cache) or archive older backups. Sync resumes automatically once space is available.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                Are photos deleted from my phone after backing up?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>No — ShareStorage never deletes files from your phone. It only copies them to the vault. Your originals stay exactly where they are on your device.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content-block" id="security">
+          <h2>Security</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-q">
+                Is my data safe if someone steals the vault phone?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>Yes. Files stored on the vault are encrypted using AES-256 before being written to disk — photos and documents use AES-256-GCM, videos and audio use AES-256-CTR. Each storage has its own encryption key. That key is wrapped by a key derived from your account password; the derived key is never persisted anywhere — it only exists in memory during an active session. Without your password, the encrypted files are unreadable even with physical access to the phone's storage.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                Can someone intercept my photos over WiFi?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>No. Communication between the client and vault uses TLS (HTTPS) with certificate pinning, which means even someone monitoring your WiFi traffic cannot read the contents of the transfer. The connection is encrypted in transit and the files are encrypted at rest.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                Does ShareStorage access my photos without me knowing?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>ShareStorage accesses your photo library only to perform the backup you set up. It does not send any photos to us or any third party — they go only to the vault device you control. Android's permission system will prompt you before access is granted, and you can revoke access at any time in Android Settings.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content-block" id="family">
+          <h2>Family Sharing</h2>
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <button class="faq-q">
+                How many people can share a vault?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>There's no hard limit. In practice, performance depends on the vault phone's hardware. A modern mid-range phone handles a family of 5–6 members comfortably. You can create multiple storages with different member lists — for example a personal storage and a shared family storage.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                Can I set limits on how much each person stores?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>Yes — each storage has a capacity cap you set when creating it, and you can change it later from the storage manage sheet on vault home. When a person has their own private storage, that cap limits how much they can back up. When a storage's cap is reached, uploads to it are paused until the cap is raised or files are deleted from within that storage.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-q">
+                Can family members see each other's photos?
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"/>
+                </svg>
+              </button>
+              <div class="faq-a">
+                <p>It depends on the storage type. A <strong>Private</strong> storage is only visible to the one person it belongs to. A <strong>Shared</strong> storage is visible to all its members — everyone added to it can browse and upload files there. The vault operator controls who is added to each storage.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content-block" id="contact">
+          <h2>Still need help?</h2>
+          <div class="contact-box">
+            <p>If your question isn't answered here, email us. We typically respond within 1–2 business days.</p>
+            <a href="mailto:nexavel.studio@gmail.com" class="contact-email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+              nexavel.studio@gmail.com
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="ShareStorage logo">
+        ShareStorage · Nexavel Studio
+      </div>
+      <nav class="footer-links">
+        <a href="how-to-use.html">How to Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <div class="footer-copy">© 2025 Nexavel Studio</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
